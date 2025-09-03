@@ -4,7 +4,7 @@ Este repositório contém um projeto de **página interativa com animação de l
 
 
 ## 📌 Demonstração
-🔗 [Clique aqui para visualizar o projeto](https://seu-link-do-projeto.com)
+🔗 [Clique aqui para visualizar o projeto](https://bvig0.github.io/Lamp/)
 
 ## 🚀 Tecnologias Utilizadas
 - **HTML5** → estrutura da página  
