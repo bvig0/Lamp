@@ -1,0 +1,107 @@
+@import url('config.css');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--cor-preto);
+}
+
+.wrapper {
+    position: relative;
+    height: 500px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper img {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 90%;
+    margin: -50px 0 0 0;
+}
+
+.wrapper label {
+    position: relative;
+    top: 230px;
+}
+
+.wrapper label span {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 48px;
+    border: 2px solid var(--cor-branco);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    transition: all 0.3s ease, background 0.3s ease;
+    transition: 1;
+}
+
+.wrapper label span:hover {
+    color: var(--cor-preto);
+    background-color: var(--cor-branco);
+    transform: scale(1.15);
+}
+
+#lamp-on {
+    opacity: 0;
+    animation: glow 3s linear infinite;
+}
+
+@keyframes glow {
+    0% {
+        opacity: 1;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    74% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    84% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+#btn:checked ~ img#lamp-on{
+  animation: none;
+}
+
+.wrapper label span:before{
+    content: "Desligar";    
+}
+
+#btn:checked ~ label span:before{
+    content: "Ligar";
+}
